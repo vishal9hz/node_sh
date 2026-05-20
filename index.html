@@ -1,15 +1,19 @@
 <script>
-const ua = navigator.userAgent || navigator.vendor || window.opera;
+  const ua = navigator.userAgent || navigator.vendor;
 
-if (/android/i.test(ua)) {
-    window.location.href =
-      "https://play.google.com/store/apps/details?id=com.example.app";
-}
-else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-    window.location.href =
-      "https://apps.apple.com/app/id123456789";
-}
-else {
-    window.location.href = "https://yourwebsite.com";
-}
+  if (/android/i.test(ua)) {
+    window.location.replace(
+      "https://play.google.com/store/apps/details?id=com.liaison360"
+    );
+  } 
+  else if (/iPhone|iPad|iPod/i.test(ua)) {
+    window.location.replace(
+      "https://apps.apple.com/in/app/liaison-360/id6759545671"
+    );
+  } 
+  else {
+    window.location.replace(
+      "https://yourwebsite.com"
+    );
+  }
 </script>
